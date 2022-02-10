@@ -14,6 +14,19 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
+let messages = []
+
+io.on('connection', socket => {
+  console.log(`socket: ${socket.id}`)
+
+  socket.emit('previousMessages', messages)
+
+  socket.on('sendMessage', data => {
+    messages.push(data)
+    socket.broadcast.emit('newMessage', data)
+  })
+})
+
 server.listen(3000, () => {
   console.log('Server up in port 3000')
 })
