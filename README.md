@@ -28,7 +28,8 @@ $yarn start
 
 ```
 Para verificar o projeto funcionando abra seu navagador e crie 2 abas com a url: http://localhost:3000
-uma tela simulando um chat irá aparecer. Agora basta preencher o que se pede nos placeholders e iniciar a simulação de comunicação entre usuários.
+uma tela simulando um chat irá aparecer. Agora basta preencher o que se pede nos placeholders
+e iniciar a simulação de comunicação entre usuários.
 ```
 
 ### Imagem
